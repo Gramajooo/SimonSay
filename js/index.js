@@ -119,7 +119,7 @@ class Juego {
         }
       }
     } else {
-      this.perdioJuego();
+      this.perdioElJuego();
     }
   }
 
