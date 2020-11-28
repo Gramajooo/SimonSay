@@ -1,105 +1,159 @@
 body {
-    margin: 0;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-  }
+  margin: 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-  .gameboard {
-    height: 100vh;
-    width: 100vh;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
-    max-height: 60vh;
-    max-width: 60vh;
-  }
+.panel {
+  background-image: url("../img/background_panel.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  max-height: 60vh;
+  max-width: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .color {
-    width: 50%;
-    height: 50%;
-    display: inline-block;
-  }
+.left {
+  float: left;
+}
 
-  .left {
-    float: left;
-  }
+.right {
+  float: left;
+}
 
-  .right {
-    float: left;
-  }
+/* BOTONES DE SIMULACION */
 
-  .celeste {
-    background: #22a6b3;
-  }
+.gameboard-black {
+  background-image: url("../img/backgorund_black.png");
+  background-size: inherit;
+  background-repeat: no-repeat;
+  width: 260px;
+  height: 245px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-rows: 92px 70px 70px;
+  grid-template-columns: repeat(3, 78px);
+  justify-content: center;
+  align-items: flex-end;
+}
 
-  .celeste.light {
-    background: #7ed6df;
-  }
+.color-pilot {
+  width: 80px;
+  height: 80px;
+  display: inline;
+  background-position: center;
+  background-size: inherit;
+  background-repeat: no-repeat;
+}
 
-  .violeta {
-    background: #be2edd;
-  }
+.button-pilot.light {
+  background-image: url("../img/blue-pilot.png");
+}
 
-  .violeta.light {
-    background: #e056fd;
-  }
+/* BOTONES DE JUEGO */
 
-  .naranja {
-    background: #f0932b;
-  }
+.gameboard {
+  margin-top: 0px;
+  display: grid;
+  grid-template-rows: 90px 70px;
+  grid-template-columns: repeat(3, 80px);
+  justify-content: center;
+  align-items: center;
+}
 
-  .naranja.light {
-    background: #ffbe76;
-  }
+.color {
+  width: 86px;
+  height: 91px;
+  display: inline;
+  background-image: url("../img/metal-press_gray.png");
+  background-position: center;
+  background-size: inherit;
+  background-repeat: no-repeat;
+}
 
-  .verde {
-    background: #6ab04c;
-  }
+.button {
+  background-image: url("../img/metal-press_gray.png");
+}
 
-  .verde.light {
-    background: #badc58;
-  }
+.button.light {
+  background-image: url("../img/metal-press_blue.png");
+}
 
-  .btn-start {
-    width: 400px;
-    height: 100px;
-    background: #ecf0f1;
-    color: #2c3e50;
-    font-size: 2.5rem;
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
-  }
 
-  .hide {
-    display: none;
-  }
+/* BOTONES DE NIVELES */
 
-  .btn-start {
-    cursor: pointer;
-    width: 420px;
-    height: 100px;
-    background: #ecf0f1;
-    color: #2c3e50;
-    border: none;
-    border-bottom: 4px solid #c4c6c7;
-    border-radius: 8px;
-    font-size: 3em;
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 210px);
-    transition: .5s;
-    outline: none;
-  }
+.balls {
+  width: 250px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .btn-start:hover {
-    color: #ecf0f1;
-    background: #2c3e50;
-    border-bottom: 4px solid #1f3346;
-  }
-  
-  .btn-start:active {
-    transform: scale(.95);
-  }
+.ball {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/button_gray.png");
+  background-size: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-ball.confirm {
+  background-image: url("../img/button_green.png");
+}
+
+/* BOTON PARA EMPEZAR JUEGO */
+
+.btn-start {
+  width: 400px;
+  height: 100px;
+  background: #ecf0f1;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 200px);
+}
+
+.hide {
+  display: none;
+}
+
+.btn-start {
+  cursor: pointer;
+  width: 420px;
+  height: 100px;
+  background: #ecf0f1;
+  color: #2c3e50;
+  border: none;
+  border-bottom: 4px solid #c4c6c7;
+  border-radius: 8px;
+  font-size: 3em;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 210px);
+  transition: .5s;
+  outline: none;
+}
+
+.btn-start:hover {
+  color: #ecf0f1;
+  background: #2c3e50;
+  border-bottom: 4px solid #1f3346;
+}
+
+.btn-start:active {
+  transform: scale(.95);
+}

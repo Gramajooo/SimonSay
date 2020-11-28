@@ -4,17 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Say</title>
+    <title>Simon Say - Among us</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="gameboard">
-        <div id="celeste" class="color celeste left" data-color="celeste"></div>
-        <div id="violeta" class="color violeta right" data-color="violeta"></div>
-        <div id="naranja" class="color naranja left" data-color="naranja"></div>
-        <div id="verde" class="color verde right" data-color="verde"></div>
-        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+    <div class="panel">
+        <div class="balls">
+            <div id="lvl_1" class="ball button-ball"></div>
+            <div id="lvl_2" class="ball button-ball"></div>
+            <div id="lvl_3" class="ball button-ball"></div>
+            <div id="lvl_4" class="ball button-ball"></div>
+            <div id="lvl_5" class="ball button-ball"></div>
+        </div>
+        <div class="gameboard-black">
+            <div id="uno" class="color-pilot button-pilot left"></div>
+            <div id="dos" class="color-pilot button-pilot right"></div>
+            <div id="tres" class="color-pilot button-pilot left"></div>
+
+            <div id="cuatro" class="color-pilot button-pilot left"></div>
+            <div id="cinco" class="color-pilot button-pilot right"></div>
+            <div id="seis" class="color-pilot button-pilot left"></div>
+
+            <div id="siete" class="color-pilot button-pilot left"></div>
+            <div id="ocho" class="color-pilot button-pilot right"></div>
+            <div id="nueve" class="color-pilot button-pilot left"></div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="balls">
+            <div id="lvl_1" class="ball button-ball"></div>
+            <div id="lvl_2" class="ball button-ball"></div>
+            <div id="lvl_3" class="ball button-ball"></div>
+            <div id="lvl_4" class="ball button-ball"></div>
+            <div id="lvl_5" class="ball button-ball"></div>
+        </div>
+        <div class="gameboard">
+            <div id="uno-press" class="color button left" data-color="uno"></div>
+            <div id="dos-press" class="color button right" data-color="dos"></div>
+            <div id="tres-press" class="color button left" data-color="tres"></div>
+
+            <div id="cuatro-press" class="color button left" data-color="cuatro"></div>
+            <div id="cinco-press" class="color button right" data-color="cinco"></div>
+            <div id="seis-press" class="color button left" data-color="seis"></div>
+
+            <div id="siete-press" class="color button left" data-color="siete"></div>
+            <div id="ocho-press" class="color button right" data-color="ocho"></div>
+            <div id="nueve-press" class="color button left" data-color="nueve"></div>
+
+            <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+        </div>
     </div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/index.js"></script>
